@@ -1,0 +1,56 @@
+[
+  {
+    "id": "t1",
+    "type": "VISIT",
+    "date": "2025-06-19T10:30:00.000Z",
+    "title": "Upcoming Consultation",
+    "description": "General consultation booked.",
+    "doctor": "Dr. Anjali Rao",
+    "status": "UPCOMING"
+  },
+  {
+    "id": "t2",
+    "type": "LAB",
+    "date": "2025-05-12T09:00:00.000Z",
+    "title": "Complete Blood Count (CBC)",
+    "description": "Routine blood work. All levels normal.",
+    "doctor": "City Lab Center",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "t3",
+    "type": "PRESCRIPTION",
+    "date": "2025-04-20T14:15:00.000Z",
+    "title": "Amoxicillin 500mg",
+    "description": "Take 1 capsule twice daily for 7 days.",
+    "doctor": "Dr. Elena Petrova",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "t4",
+    "type": "VISIT",
+    "date": "2025-04-20T14:00:00.000Z",
+    "title": "Sick Visit",
+    "description": "Diagnosed with mild bacterial infection.",
+    "doctor": "Dr. Elena Petrova",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "t5",
+    "type": "PROCEDURE",
+    "date": "2024-11-10T10:00:00.000Z",
+    "title": "Annual Flu Vaccine",
+    "description": "Influenza vaccine administered.",
+    "doctor": "HealthBridge Medical Center",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "t6",
+    "type": "VISIT",
+    "date": "2024-11-10T09:30:00.000Z",
+    "title": "Annual Wellness Checkup",
+    "description": "Routine physical examination.",
+    "doctor": "Dr. Marcus Thorne",
+    "status": "COMPLETED"
+  }
+]
