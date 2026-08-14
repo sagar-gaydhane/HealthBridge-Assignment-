@@ -1,97 +1,66 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# HealthBridge React Native Assignment
 
-# Getting Started
+This repository contains the complete source code for the HealthBridge React Native assignment. The application was built from scratch to closely match the provided Figma design, demonstrating strong UI implementation skills, component-based architecture, and React Navigation.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 🚀 Features & Screens Implemented
+- **Login Screen:** Custom designed screen that authenticates users against local JSON data.
+- **Home Screen:** Displays a searchable, filterable list of doctors pulled from a local JSON dataset. Accurately recreates the provided UI, including dynamic chips and styling.
+- **About Doctor Screen:** A detailed view of a selected doctor. Includes a custom functional map integration and a dynamic "Book Appointment" flow that activates upon time slot selection.
+- **Appointment Confirmation Screen:** Matches the receipt design from Figma exactly.
+- **Medical Timeline (Profile):** A completely custom-built screen acting as the user's chronological medical history, featuring dynamic data filtering and a beautiful vertical timeline UI.
 
-## Step 1: Start Metro
+## 📸 Screenshots
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+<p align="center">
+  <img src="./screenshots/login_screen.png" width="200" alt="Login Screen">
+  <img src="./screenshots/Home_screem.png" width="200" alt="Home Screen">
+  <img src="./screenshots/Appointment_screen_1.png" width="200" alt="About Doctor Screen">
+  <img src="./screenshots/Appointmen_confirm_screen_1.png" width="200" alt="Confirmation Screen">
+  <img src="./screenshots/timeline_screen.png" width="200" alt="Timeline Screen">
+  <img src="./screenshots/profile_screen.png" width="200" alt="Profile Screen">
+</p>
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 🛠️ Tech Stack & Libraries
+- **React Native** (Functional Components, Hooks)
+- **@react-navigation/native** & **@react-navigation/native-stack** & **@react-navigation/bottom-tabs** for complete app navigation.
+- **react-native-vector-icons** (Ionicons) for all scalable vector iconography.
+- **@react-native-async-storage/async-storage** for persisting the user session.
 
-```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+## 📂 Project Structure
+```text
+src/
+├── components/   # Reusable UI components (ScreenHeader, PrimaryButton, DoctorCard)
+├── context/      # React Context (AuthContext for user state management)
+├── data/         # Local JSON datasets (users.json, doctors.json, timeline.json)
+├── navigation/   # Stack and Tab navigation configurations
+├── screens/      # Individual application screens and their isolated styles
+└── theme/        # Centralized theme tokens (colors, spacing, typography)
 ```
 
-## Step 2: Build and run your app
+## 📝 Assumptions Made During Development
+1. **Login Design:** Since the Login screen was not included in the Figma, it was designed to match the app's premium aesthetic (purple/white color scheme) using the provided design system tokens.
+2. **Timeline Screen:** The bottom navigation bar included a calendar icon. This was interpreted and fully implemented as a "Medical Timeline" screen to display the patient's past and upcoming events.
+3. **Booking Flow:** Instead of navigating instantly upon tapping a time slot on the About Doctor screen, a floating "Book Appointment" footer was added to confirm the user's choice, preventing accidental navigation.
+4. **Icons & Assets:** Placeholder assets and vector icons were used in place of proprietary assets, styled to match the mockups as closely as possible.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 💻 Getting Started
 
-### Android
+### Prerequisites
+- Node.js
+- Android Studio / Android Emulator
 
-```sh
-# Using npm
-npm run android
+### Installation
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the application:
+   ```bash
+   npm start
+   # In a separate terminal or by pressing 'a' in the Metro bundler:
+   npm run android
+   ```
 
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 📱 Testing the APK
+A pre-built Release APK is available for testing on an Android device or emulator. The generated APK can be found at `android/app/build/outputs/apk/release/`.
