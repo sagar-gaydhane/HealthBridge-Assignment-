@@ -43,6 +43,11 @@ src/
 3. **Booking Flow:** Instead of navigating instantly upon tapping a time slot on the About Doctor screen, a floating "Book Appointment" footer was added to confirm the user's choice, preventing accidental navigation.
 4. **Icons & Assets:** Placeholder assets and vector icons were used in place of proprietary assets, styled to match the mockups as closely as possible.
 
+## 🔐 Testing Credentials
+To test the application, you can use the following mock credentials (defined in `src/data/users.json`):
+- **Username / Email:** `admin` (or `admin@example.com`)
+- **Password:** `admin`
+
 ## 💻 Getting Started
 
 ### Prerequisites
